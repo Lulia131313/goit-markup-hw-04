@@ -1,0 +1,371 @@
+:root {
+  --primery-text-color: #2e2f42;
+  --secondery-text-color: #434455;
+  --brand-color: #4d5ae5;
+  --pressed-color: #404bbf;
+  --light-color: #f4f4fd;
+  --wigth-color: #ffffff;
+  --accent: #e7e9fc;
+  --primery-text: 'Roboto', sans-serif;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.link {
+  text-decoration: none;
+}
+body {
+  background-color: #ffffff;
+  color: #434455;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*=========COMPONENTS======*/
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.suptitle {
+  color: var(--primery-text-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+
+.section-description {
+  color: var(--secondery-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  margin-top: 8px;
+}
+.menu-link {
+  display: block;
+  padding: 24px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: var(--primery-text-color);
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--pressed-color);
+}
+.top-title {
+  color: var(--primery-text-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 72px;
+}
+.logo {
+  display: inline-flex;
+  align-items: center;
+  padding: 25.5px 0;
+  color: var(--brand-color);
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  margin-right: 76px;
+}
+.logo-studio {
+  display: inline-flex;
+  align-items: center;
+  margin-right: auto;
+  font-family: Raleway, sans-serif;
+  color: var(--primery-text-color);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+
+/*==========/COMPONENTS========*/
+
+/*=========HEADER=======*/
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+.page-header {
+  border-bottom: 1px solid var(--accent);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  background: var(--wigth-color);
+}
+
+.menu {
+  margin-left: 76px;
+  display: flex;
+  gap: 40px;
+}
+
+.contact-address {
+  font-style: normal;
+  margin-left: auto;
+}
+.address-list {
+  display: flex;
+  gap: 40px;
+}
+.contact-mail-number {
+  display: flex;
+  gap: 40px;
+  color: var(--secondery-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+.contact-mail-number:hover,
+.contact-mail-number:focus {
+  color: var(--pressed-color);
+}
+/*============/HEADER=========*/
+
+/*============HERO============*/
+
+.section-hero {
+  padding: 188px 0;
+  background-color: var(--primery-text-color);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  color: var(--wigth-color);
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+  max-width: 496px;
+  margin: 0 auto;
+  padding-bottom: 48px;
+}
+.page-button {
+  font-family: 'Roboto', sans-serif;
+  color: var(--wigth-color);
+  background: var(--brand-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  cursor: pointer;
+  padding: 16px 32px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  min-width: 169px;
+  height: 56px;
+  border: none;
+}
+.page-button:hover,
+.page-button:focus {
+  background: var(--pressed-color);
+  border-radius: 4px;
+}
+/*============/HEARO==========*/
+
+/*============ADVANTAGES=======*/
+.section {
+  padding: 120px 0;
+}
+.adventages-list {
+  display: flex;
+  gap: 24px;
+}
+.adventages-item {
+  width: calc((100% - 72px) / 4);
+  text-align: -webkit-match-parent;
+}
+.advantage-title {
+  margin-bottom: 8px;
+}
+.suptitle.advantage-title {
+  text-align: -webkit-match-parent;
+}
+
+/*============/ADVANTAGES=======*/
+/*============About============*/
+.section-about {
+  padding: 120px 0;
+}
+.about-list {
+  display: flex;
+  gap: 24px;
+}
+.about-item {
+  width: calc((100% - 24px * 2) / 3);
+}
+/*============/About============*/
+
+/*============TEAM============*/
+
+.section.information-section {
+  background-color: var(--light-color);
+}
+.information-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.team-name {
+  padding: 32px 0;
+}
+.information-iteam {
+  background-color: var(--wigth-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  width: calc((100% - 24px * 3) / 4);
+}
+.suptitle.team-title {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.team-text {
+  margin-bottom: 32px;
+  text-align: center;
+}
+/*============/TEAM===========*/
+/*============FOOTER==========*
+
+/*=============/FOOTER==========*/
+.footer {
+  padding: 100px 0;
+  background-color: var(--primery-text-color);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.logo-footer {
+  display: inline-block;
+  align-items: center;
+  color: var(--brand-color);
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.dark {
+  color: var(--light-color);
+}
+.section-description.dark {
+  width: 264px;
+}
+/*=============/FOOTER=========*/
+
+/*===============PORTFOLIO======*/
+.section-filter {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.filter-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.filter-button {
+  font-family: 'Roboto', sans-serif;
+  color: var(--brand-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  background-color: var(--light-color);
+  cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid var(--accent);
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--wigth-color);
+  background: var(--pressed-color);
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.container-menu {
+  padding: 32px 16px;
+  border: 1px solid var(--accent);
+  border-top: none;
+}
+.example-item {
+  border: 1px solid var(--accent);
+  background: var(--wigth-color);
+  width: calc((100% - 24px * 2) / 3);
+  max-width: 360px;
+}
+
+.example-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 48px;
+}
+.suptitle.example-title {
+  margin-bottom: 8px;
+  margin-left: 16px;
+  text-align: left;
+}
+.section-description.example {
+  margin-left: 16px;
+  text-align: left;
+}
+
+/*==============/PORTFOLIO=======*/
