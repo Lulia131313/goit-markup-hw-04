@@ -414,7 +414,6 @@ img {
 }
 .contaniar-footer {
   display: flex;
-  gap: 120px;
   align-items: baseline;
 }
 
